@@ -1,0 +1,14 @@
+#include<stdio.h>
+int main()
+{
+	long long int s,c,a,b,n,e,t,g;
+	scanf("%I64d",&t);
+	for(int i=0;i<t;i++){
+		scanf("%I64d %I64d %I64d %I64d",&s,&a,&b,&c);
+		n=s/c;
+		e=(n/a)*b;
+		g = n+e;
+		printf("%I64d\n", g);
+	}
+	return 0;
+}
