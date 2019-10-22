@@ -1,0 +1,17 @@
+#include<stdio.h>
+int main()
+{
+	int n,a,b,x,y,c=0,i;
+	scanf("%d%d%d",&n,&a,&b);
+	for(i=1;i<=n;i++)
+	{
+		x=i-1;
+		y=n-i;
+		if(x>=a && y<=b)
+		{
+			c++;
+		}
+	}
+	printf("%d",c);
+	return 0;
+}
