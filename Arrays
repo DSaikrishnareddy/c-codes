@@ -1,0 +1,35 @@
+#include<stdio.h>
+int main()
+{
+    long long int n1,n2;
+    scanf("%I64d%I64d",&n1,&n2);
+    int k,m,i,j,cnt=0;
+    scanf("%d%d",&k,&m);
+    long long int a[n1],b[n2];
+    for(i=0;i<n1;i++)
+    {
+     scanf("%I64d",&a[i]);
+    }
+ 
+    for(j=0;j<n2;j++)
+    {
+        scanf("%I64d",&b[j]);
+    }
+    long long   t=a[k-1];
+    for(j=0;j<n2;j++)
+    {
+        if(t<b[j])
+        {
+            cnt++;
+        }
+    }
+    if(cnt>=m)
+    {
+        printf("YES");
+    }
+    else
+    {
+        printf("NO");
+    }
+    return 0;
+    }
