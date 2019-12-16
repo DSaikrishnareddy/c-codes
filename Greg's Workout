@@ -1,0 +1,43 @@
+#include<stdio.h>
+int main()
+{
+	int i,j,c=0,bi=0,b=0,n;
+	scanf("%d",&n);
+	int a[n];
+	for(i=0;i<n;i++)
+	{
+		scanf("%d",&a[i]);
+	}
+	for(i=0;i<3;i++)
+	{
+		for(j=i;j<n;j=j+3)
+		{
+			if(i==0)
+			{
+				c=c+a[j];
+			}
+			else if(i==1)
+			{
+				bi=bi+a[j];
+			}
+			else if(i==2)
+			{
+				b=b+a[j];
+			}
+		}
+	}
+	if(c>bi && c>b)
+	{
+		printf("chest");
+	}
+	else if(bi>c && bi>b)
+	{
+		printf("biceps");
+	}
+	else
+	{
+		printf("back");
+	}
+	return 0;
+}
+		
